@@ -36,7 +36,7 @@ export default function IdentityManager() {
         body: JSON.stringify(profileData)
       });
       if (!commitRes.ok) throw new Error("Failed to get commitments");
-      const { output: commitments } = await commitRes.json();
+      const commitments = await commitRes.json();
 
       // 2. Format payload for Aleo Program
       console.log("Formatting Aleo payload...");

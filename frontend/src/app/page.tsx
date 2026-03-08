@@ -124,7 +124,7 @@ export default function Home() {
         <div className='max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm'>
           <div className='flex items-center space-x-2 mb-4 md:mb-0'>
             <Brain className='w-5 h-5 text-gray-700' />
-            <span>c 2026 Aura Confidential AI. Built on Aleo.</span>
+            <span>&copy; 2026 Aura Confidential AI. Built on Aleo.</span>
           </div>
           <div className='flex space-x-6'>
             <a href='#' className='hover:text-white transition'>Twitter</a>
