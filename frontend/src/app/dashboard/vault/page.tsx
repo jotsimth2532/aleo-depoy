@@ -1,4 +1,5 @@
 "use client";
+
 import { Lock, ArrowRight, ShieldCheck } from "lucide-react";
 
 export default function VaultEngine() {
@@ -12,7 +13,9 @@ export default function VaultEngine() {
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         <div className="border border-white/10 p-6 bg-white/[0.02]">
           <h3 className="text-lg font-medium mb-1">Locked Value</h3>
-          <div className="text-4xl font-light font-mono text-green-400 mb-4">12,500 <span className="text-sm text-neutral-500">ALEO</span></div>
+          <div className="text-4xl font-light font-mono text-green-400 mb-4">
+            12,500 <span className="text-sm text-neutral-500">ALEO</span>
+          </div>
           <div className="flex items-center text-xs text-neutral-400 font-mono">
             <Lock className="w-3 h-3 mr-2" /> Fully collateralized smart contracts
           </div>
@@ -45,13 +48,9 @@ export default function VaultEngine() {
                 </div>
               </div>
               <div className="flex items-center space-x-6 text-right">
-                <div className={"font-mono " + (tx.amount.startsWith("+") ? "text-green-400" : "text-neutral-300")}>
-                  {tx.amount}
-                </div>
+                <div className={"font-mono " + (tx.amount.startsWith("+") ? "text-green-400" : "text-neutral-300")}>{tx.amount}</div>
                 <div className="w-24">
-                  <span className={"text-xs font-mono px-2 py-1 rounded " + (tx.status === "VERIFIED" ? "bg-white/10 text-white" : "bg-neutral-900 text-neutral-500")}>
-                    {tx.status}
-                  </span>
+                  <span className={"text-xs font-mono px-2 py-1 rounded " + (tx.status === "VERIFIED" ? "bg-white/10 text-white" : "bg-neutral-900 text-neutral-500")}>{tx.status}</span>
                 </div>
               </div>
             </div>
