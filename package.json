@@ -1,0 +1,14 @@
+{
+  "name": "aura-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start",
+    "render:build:frontend": "npm --prefix frontend run build",
+    "render:start:frontend": "npm --prefix frontend run start",
+    "render:build:backend": "npm --prefix backend/api run build",
+    "render:start:backend": "npm --prefix backend/api run start"
+  },
+  "postinstall": "npm --prefix frontend install --legacy-peer-deps"
+}
